@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв’язок — Поліклініка «Здоров’я»</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Логотип Поліклініки Здоров’я" width="70" height="70">
+        <h1>Поліклініка «Здоров’я» — Зворотній зв’язок</h1>
+        <p>
+            <a href="index.html"><button type="button">Перейти на Головну сторінку</button></a>
+        </p>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Надіслати звернення</h2>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                
+                <p>
+                    <label for="fullname">1. Прізвище та ім’я:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Введіть прізвище та ім’я" required>
+                </p>
+
+                <p>
+                    <label for="email">2. E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </p>
+
+                <p>
+                    <label for="age">3. Вік:</label><br>
+                    <input type="number" id="age" name="age" min="1" max="120" placeholder="Вкажіть ваш вік" required>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="purpose">4. Мета зворотнього зв’язку:</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="cooperation">співпраця</option>
+                    <option value="complaint">скарга на якість послуги</option>
+                    <option value="suggestion">пропозиція</option>
+                    <option value="bug">наявність помилки на сайті</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">5. Детально (максимум 500 символів):</label><br>
+                <textarea id="details" name="details" rows="6" cols="50" maxlength="500" placeholder="Опишіть ваше звернення детальніше..." required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я надаю згоду на обробку персональної інформації</label>
+            </p>
+
+            <p>
+                <button type="submit">Відправити інформацію</button>
+                <button type="reset">Очистити форму</button>
+            </p>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Поліклініка «Здоров’я». Усі права захищено.</p>
+    </footer>
+
+</body>
+</html>
